@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  {% for todo in todos %}
+    <p class="bg-info">
+        <b><a href="{% url 'todo_detail' pk=todo.pk %}">{{ todo.title }}</a></b> <code>by {{ todo.deadline_date }}</code><br />
+        {{ todo.text|linebreaksbr }}
+    </p>
+  {% endfor %}
+{% endblock content %}

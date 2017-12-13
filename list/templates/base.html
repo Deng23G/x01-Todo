@@ -1,0 +1,17 @@
+{% load staticfiles %}
+
+<html>
+<head>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="{% static 'css/list.css' %}">
+</head>
+<body>
+  <h1><a href="/">So much to do</a></h1>
+   <a href="{% url 'todo_edit'%}">Create new</a>
+  <div class="col-md-8">
+      {% block content %}
+      {% endblock %}
+  </div>
+</body>
+</html>
