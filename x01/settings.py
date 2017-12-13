@@ -25,7 +25,12 @@ SECRET_KEY = 'zg+87g507s=hu508^)on_5h94-0%(pirs=6t&!)(gkrq7&*3e('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    'x01todo.herokuapp.com',
+    'deguviro.ga'
+]
 
 
 # Application definition
